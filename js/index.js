@@ -45,3 +45,40 @@ console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
 // - Once determined, break each step down into micro steps
 // - Test each macro solution in isolation (console output helps)
 // - Begin to combine the steps together to create a final solution (test as you go!)
+
+
+
+
+
+
+
+// Step 1: Randomize 3 colours (0-255)
+
+
+//step 2: Make a button clickable (and do something!)
+
+//A: find a button
+let randomBtn = document.querySelector('.randomize')
+
+//B ssign a click listener to the button
+
+randomBtn.addEventListener('click', (event) => {
+
+let colourR = Math.floor( Math.random() * 256 )
+let colourG = Math.floor( Math.random() * 256 )
+let colourB = Math.floor( Math.random() * 256 )
+
+console.log(`rgb(${colourR},${colourG},${colourB})`)
+
+
+
+
+// Step 3 change the backgrownd color of the body
+
+//a: find a body
+
+let bodyElement = document. querySelector ('body')
+//b: adding a color to the background of the body
+bodyElement.style.backgroundColor =`rgb(${colourR},${colourG},${colourB})`;
+
+})   
